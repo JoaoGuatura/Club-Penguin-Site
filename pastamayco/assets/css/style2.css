@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 400px auto;
+    grid-template-rows: 300px auto 200px;
+    grid-template-areas: "header header" "main main" "main main";
+    min-height: 100vh;
+    font-family: 'Madimi One', sans-serif;
+
+}
+
+main{
+    grid-area: main;
+    height: 800px;
+    background-color: #007ad7;
+}
+
+header{
+    grid-area: header;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    background-color: #0b68af;
+  
+}
+body {
+    background-color: #007ad7;
+}
+
+
+li:hover{
+    opacity: 0.5;
+    background-color: darkblue;
+    cursor: pointer;
+  }
+nav{
+    animation-name: borders;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    font-size: 40px;
+}
+ul{
+    display:flex;
+    justify-content: space-around;
+    list-style-type: none;
+
+    
+}
+li{
+    padding: 50px;
+
+}
+.classe{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items:last baseline;
+
+}
+button:hover{
+    opacity: 0.5;
+    background-color: darkblue;
+
+}
+
+.botoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

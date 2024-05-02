@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Penguin</title>
+    <link rel="icon" href="../download.ico">
+    <link rel="stylesheet" href="../css/style3.css">
+    <style>
+        body {
+            background-color: #007ad7;
+        }
+        .titulo {
+            text-align: center;
+            margin-top: 50px;
+        }
+        p {
+            color: white;
+            font-size: 18px;
+            text-align: center;
+        }
+        .pinguim {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="titulo">
+        <h1>Club Penguin - Dados do Formulário</h1>
+        <p id="dadosFormulario"></p>
+    </div>
+    
+    <img id="pinguimImagem" class="pinguim" src="" alt="Pinguim">
+
+    <script>
+      
+
+
+        const pinguimSelecionado = localStorage.getItem('pinguimSelecionado');
+
+        if (pinguimSelecionado) {
+            document.getElementById('pinguimImagem').src = pinguimSelecionado;
+        }
+
+        function obterParametroConsulta(nome) {
+            const parametros = new URLSearchParams(window.location.search);
+            return parametros.get(nome);
+        }
+       
+        const nome = obterParametroConsulta('nome');
+        const email = obterParametroConsulta('email');
+    
+    
+        document.getElementById('dadosFormulario').textContent = `Nome: ${nome}, Email: ${email}`;
+        document.getElementById('pinguimImagem').src = pinguimSelecionado;
+    </script>
+</body>
+</html>

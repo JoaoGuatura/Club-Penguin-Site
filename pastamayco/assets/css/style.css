@@ -1,0 +1,37 @@
+
+body, html {
+    height: 80%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagens{
+text-align: center;
+margin-bottom: 35px;
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.conteudo-centralizado{
+    text-align: center;
+}
+
+button{
+    padding: 10px 13px;
+    color: white;
+    background: blue;
+    
+}
+
+#paginaBotao{
+    padding: 10px 13px;
+    color: white;
+    background: blue;
+}
